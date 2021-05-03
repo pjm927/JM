@@ -2,33 +2,34 @@
 <html>
   <head>
     <title>M-Link</title>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-N8ZT396L5H"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-N8ZT396L5H');
-</script>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="colors.js">
+    </script>
   </head>
 
   <body>
     <h1> <a href="index.html">JM</a> </h1>
-    <ol>
-      <li><a href="1.html">M-Link</a></li>
-      <li><a href="2.html">M-복떡방</a></li>
-      <li><a href="3.html">ASMR</a></li>
-      <li><a href="4.html">드럼</a></li>
-    </ol>
-
+    <input id="night_day" type="button" value="night" onclick="
+     nightDayHandler(this);
+      ">
+      <div id="grid">
+        <ol>
+          <li><a href="1.html"class="saw" id="active">M-Link</a></li>
+          <li><a href="2.html">M-복떡방</a></li>
+          <li><a href="3.html">ASMR</a></li>
+          <li><a href="4.html">드럼</a></li>
+        </ol>
+    <div id="article">
     <h2><strong><u>M-Link</u></strong></h2>
 
     <p><strong>''정미''</strong>의 웹 페이지 만들기. 재미있고, 유익한 정보가 가득한...
      <br><a href="https://www.idolbom.go.kr/front/main/main.do"
      target="_blank" title="정부 돌봄">아이돌봄</a>,
      시니어케어,간병 등에 대하여 공급자와 수요자을 연결해주는
-     공간 <img src="bird.jpg" width="100%"></P>
-
+     공간 <img src="bird.jpg" width="100%">
+    </P>
+  </div>
+   </div>
   </body>
 </html>

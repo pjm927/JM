@@ -2,19 +2,23 @@
 <html>
   <head>
     <title>JM - Welcome</title>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-N8ZT396L5H"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-N8ZT396L5H');
-</script>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css"> <!-- style.css를 읽어 링크-->
+     <script src="colors.js">
+     </script>
   </head>
 
   <body>
     <h1> <a href="index.html">JM</a> </h1>
+
+    <input id="night_day" type="button" value="night" onclick="
+     nightDayHandler(this);
+      ">
+    <input type="button" value="night" onclick="
+       nightDayHandler(this);
+        "> <!-- 함수로 인해 두개의 버튼이 각각 동작 -->
+
+    <div id="grid">
     <ol>
       <li><a href="1.html">M-Link</a></li>
       <li><a href="2.html">M-복떡방</a></li>
@@ -22,11 +26,12 @@
       <li><a href="4.html">드럼</a></li>
     </ol>
 
-    <h2><strong><u>JM 소개</u></strong></h2>
+    <div id="article">
+      <p>
+        <h2><strong><u>JM 소개</u></strong></h2>
+        <strong>이 방은 정미의 코딩 연습 방이다. 방문을 환영합니데이~~</strong>
+      </p>
 
-    <p>
-      <strong>이 방은 정미의 코딩 연습 방이다. 방문을 환영합니데이~~</strong>
-    </p>
 
     <p>
       <div id="disqus_thread"></div>
@@ -36,11 +41,11 @@
           *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
           /*
           var disqus_config = function () {
-          this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-          this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+          self.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+          self.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
           };
           */
-          (function() { // DON'T EDIT BELOW THIS LINE
+          (function() { // DON'T EDIT BELOW self LINE
           var d = document, s = d.createElement('script');
           s.src = 'https://codingexercise.disqus.com/embed.js';
           s.setAttribute('data-timestamp', +new Date());
@@ -48,7 +53,9 @@
           })();
       </script>
       <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+     </p>
 
-  </p>
+    </div>
+  </div>
   </body>
 </html>
